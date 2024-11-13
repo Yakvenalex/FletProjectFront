@@ -1,0 +1,11 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: 3.12
+build:
+  requirementsPath: requirements.txt
+run:
+  persistenceMount: /data
+  containerPort: 8800
+  command: flet run --web --port 8800 my_flet_app
